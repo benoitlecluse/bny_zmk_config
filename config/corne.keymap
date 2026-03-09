@@ -9,39 +9,7 @@
 #include <dt-bindings/zmk/keys.h>
 
 / {
-    combos {
-        compatible = "zmk,combos";
-
-        leftpar {
-            bindings = <&kp LPAR>;
-            key-positions = <3 4>;
-        };
-
-        leftbracket {
-            bindings = <&kp LEFT_BRACKET>;
-            key-positions = <15 16>;
-        };
-
-        leftcurl {
-            bindings = <&kp LEFT_BRACE>;
-            key-positions = <27 28>;
-        };
-
-        rightpar {
-            bindings = <&kp RIGHT_PARENTHESIS>;
-            key-positions = <7 8>;
-        };
-
-        rightbracket {
-            bindings = <&kp RIGHT_BRACKET>;
-            key-positions = <19 20>;
-        };
-
-        rightcurl {
-            bindings = <&kp RIGHT_BRACE>;
-            key-positions = <31 32>;
-        };
-    };
+    combos { compatible = "zmk,combos"; };
 
     keymap {
         compatible = "zmk,keymap";
@@ -71,10 +39,10 @@
 
             display-name = "Num";
             bindings = <
-&kp ESCAPE        &kp N0      &kp N1  &kp N2        &kp N3  &kp MINUS       &kp CARET       &kp EXCLAMATION  &kp AT       &kp HASH   &kp SLASH  &kp BSPC
-&kp LEFT_SHIFT    &trans      &kp N4  &kp N5        &kp N6  &kp PLUS        &kp MINUS       &kp DOLLAR       &kp PERCENT  &kp CARET  &kp BSLH   &kp GRAVE
-&kp LEFT_CONTROL  &bt BT_NXT  &kp N7  &kp NUMBER_8  &kp N9  &kp KP_EQUAL    &kp APOSTROPHE  &kp AMPS         &kp LBRC     &kp RBRC   &kp PIPE   &kp TILDE
-                                      &kp LGUI      &trans  &kp SPACE       &kp RET         &trans           &kp RALT
+&kp ESCAPE        &kp N0      &kp N1  &kp N2        &kp N3  &kp MINUS       &kp CARET          &kp EXCLAMATION  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp SLASH  &kp BSPC
+&kp LEFT_SHIFT    &trans      &kp N4  &kp N5        &kp N6  &kp PLUS        &kp MINUS          &kp DOLLAR       &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp BSLH   &kp GRAVE
+&kp LEFT_CONTROL  &bt BT_NXT  &kp N7  &kp NUMBER_8  &kp N9  &kp KP_EQUAL    &kp LS(SEMICOLON)  &kp AMPS         &kp LBRC              &kp RBRC               &kp PIPE   &kp TILDE
+                                      &kp LGUI      &trans  &kp SPACE       &kp RET            &trans           &kp RALT
             >;
         };
 
